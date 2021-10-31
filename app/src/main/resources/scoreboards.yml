@@ -1,0 +1,86 @@
+# teams: {redteam}, {blueteam}, {greenteam}, {yellowteam}, {aquateam}, {whiteteam}, {pinkteam}, {grayteam}
+# basic server properties:
+# - {date} just lines.
+# - {gametime} both.
+# - {servertime} just title.
+# - {state} just lines.
+# - {winner} both.
+# - {players} just lines.
+# show-your-team: it sets you up to show your team next to YOU
+# none: empty line
+# Example:
+# gamestate:
+#  title: '{prefix} -- &eState'
+#  lines:
+#   - '&alocalhost'
+#   - '  '
+#   - '&7G {grayteam} {state}'
+#   - '&dP {pinkteam} {state}'
+#   - '&fW {whiteteam} {state}'
+#   - '&3A {aquateam} {state}'
+#   - '&eY {yellowteam} {state}'
+#   - '&aG {greenteam} {state}'
+#   - '&bB {blueteam} {state}'
+#   - '&cR {redteam} {state}'
+#   - ' '
+#   - '&7{date}'
+
+scoreboards:
+  prefix: '&eBedWars&7'
+  show-your-team: true
+  active:
+    title: '{prefix} -- &e{servertime}'
+    lines:
+      - '&alocalhost'
+      - '&fIP:'
+      - '  '
+      - '&7G {grayteam} {state}'
+      - '&dP {pinkteam} {state}'
+      - '&fW {whiteteam} {state}'
+      - '&3A {aquateam} {state}'
+      - '&eY {yellowteam} {state}'
+      - '&aG {greenteam} {state}'
+      - '&bB {blueteam} {state}'
+      - '&cR {redteam} {state}'
+      - ' '
+      - '&7{date}'
+
+  creator:
+    title: '{prefix} -- &eCreator'
+    lines:
+      - '&alocalhost'
+      - '&fIP:'
+      - '  '
+      - '&7G {grayteam} {state}'
+      - '&dP {pinkteam} {state}'
+      - '&fW {whiteteam} {state}'
+      - '&3A {aquateam} {state}'
+      - '&eY {yellowteam} {state}'
+      - '&aG {greenteam} {state}'
+      - '&bB {blueteam} {state}'
+      - '&cR {redteam} {state}'
+      - ' '
+      - '&7{date}'
+
+  end:
+    title: '&eWinner -- &b{winner}'
+    lines:
+      - '&alocalhost'
+      - '&fIP:'
+      - '  '
+      - '&7G {grayteam} {state}'
+      - '&dP {pinkteam} {state}'
+      - '&fW {whiteteam} {state}'
+      - '&3A {aquateam} {state}'
+      - '&eY {yellowteam} {state}'
+      - '&aG {greenteam} {state}'
+      - '&bB {blueteam} {state}'
+      - '&cR {redteam} {state}'
+      - ' '
+      - '&7{date}'
+
+  wait:
+    title: '{prefix} -- &e1:00:00'
+    lines:
+      - '&cPlayers: &3{players}'
+

@@ -1,0 +1,14 @@
+name: BedWars
+version: 1.0.0
+main: hu.dysaido.bedwars.BedWars
+api-version: 1.16
+load: STARTUP
+softdepend: []
+author: Dysaido
+description: This is a Bedwars plugin. It helps you build a server where you have to work with your team to save your beds.
+
+commands:
+  bedwars:
+    description: It is a description.
+    usage: /<command> <option>
+    aliases: [bw, bedw, bwars]

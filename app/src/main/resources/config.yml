@@ -1,0 +1,27 @@
+# starting progressbar:
+#   - {timer}: It prints out the that, how much time you have until the beginning
+# BarColors: PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE
+chat-prefix: '&7[&3Bed&8Wars&7]'
+generator:
+  itemname: '&7|&3Bed&8Wars&7|'
+timer:
+  hour: 1
+  minute: 0
+  second: 0
+starting:
+  progressbar:
+    color: 'YELLOW'
+    countdown: 20
+    message: 'Game starting {timer} seconds...'
+    title-message-start: 5
+    title-message: '&c{timer}'
+  teams:
+    commonchat: '%teamcolor%[%team%] &7%player% &6> &7%message%'
+    commontab: '%teamcolor%[%team%] &7%player%'
+    maxnumber: 5
+  player-numbers:
+    maxnumber: 10
+    minnumber: 5
+won:
+  congratulation: 'Congratulation %player%!'
+  leavetime: 10
